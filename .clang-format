@@ -1,0 +1,9 @@
+BasedOnStyle: Google
+ColumnLimit: 180
+DerivePointerAlignment: false
+PointerAlignment: Left
+AlignConsecutiveAssignments: true
+SortIncludes: false
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 10
