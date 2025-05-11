@@ -38,13 +38,13 @@ void find(char* path, char* name) {
   switch (st.type) {
     case T_FILE:
       if (strcmp(get_file_name(path), name) == 0) {
-        printf("%s\n", path);
+        fprintf(1, "%s\n", path);
       }
       break;
 
     case T_DIR:
       if (strlen(path) + 1 + DIRSIZ + 1 > sizeof buf) {
-        printf("find: path too long\n");
+        fprintf(2, "find: path too long\n");
         break;
       }
       strcpy(buf, path);
